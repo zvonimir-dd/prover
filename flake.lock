@@ -1,22 +1,35 @@
 {
   "nodes": {
     "crane": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
       "locked": {
-        "lastModified": 1698166613,
-        "narHash": "sha256-y4rdN4flxRiROqNi1waMYIZj/Fs7L2OrszFk/1ry9vU=",
+        "lastModified": 1768319649,
+        "narHash": "sha256-VFkNyxHxkqGp8gf8kfFMW1j6XeBy609kv6TE9uF/0Js=",
         "owner": "ipetkov",
         "repo": "crane",
-        "rev": "b7db46f0f1751f7b1d1911f6be7daf568ad5bc65",
+        "rev": "4b6527687cfd20da3c2ef8287e01b74c2d6c705b",
         "type": "github"
       },
       "original": {
         "owner": "ipetkov",
+        "ref": "v0.23.0",
         "repo": "crane",
+        "type": "github"
+      }
+    },
+    "cvc5-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1790367883,
+        "narHash": "sha256-LVPNGt1DKkqQ9uesKBXMtQ3t58yvtYtvyfuZnhXbIgs=",
+        "owner": "cvc5",
+        "repo": "cvc5",
+        "rev": "2b2e84419f70817ec919a784a48806e79f677240",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cvc5",
+        "ref": "cvc5-1.4.1",
+        "repo": "cvc5",
         "type": "github"
       }
     },
@@ -61,11 +74,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1698553279,
-        "narHash": "sha256-T/9P8yBSLcqo/v+FTOBK+0rjzjPMctVymZydbvR/Fak=",
+        "lastModified": 1790570722,
+        "narHash": "sha256-Avcz96Q+8OkfUIUXipBBVsQn19L622BtKP7mk6M+uls=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "90e85bc7c1a6fc0760a94ace129d3a1c61c3d035",
+        "rev": "419fe0f449b3fbe3bdd53d9840288db4509ec32e",
         "type": "github"
       },
       "original": {
@@ -78,10 +91,11 @@
     "root": {
       "inputs": {
         "crane": "crane",
+        "cvc5-src": "cvc5-src",
         "fenix": "fenix",
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs",
-        "z3": "z3"
+        "z3-src": "z3-src"
       }
     },
     "rust-analyzer-src": {
@@ -116,18 +130,19 @@
         "type": "github"
       }
     },
-    "z3": {
+    "z3-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1700100528,
-        "narHash": "sha256-+WcLC+byeKlnBfHXC6/JpAKEddFcG2k6Sck3m/Md76w=",
+        "lastModified": 1786850733,
+        "narHash": "sha256-F46bADHVe6ssQrj6oXPSi3KRGBaX//pXO3+4bMFi8Ag=",
         "owner": "Z3Prover",
         "repo": "z3",
-        "rev": "5b9fdcf46234ea241156c8450ba2c49674918444",
+        "rev": "0b6cdcdbc65da25ef0f73ac9da210574d0f66cf8",
         "type": "github"
       },
       "original": {
         "owner": "Z3Prover",
+        "ref": "z3-5.1.0",
         "repo": "z3",
         "type": "github"
       }
